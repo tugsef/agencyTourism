@@ -1,6 +1,0 @@
-package com.tourism.agency.core.utilities;
-
-public class ErrorDataResult<T> extends Result{
-
-	p
-}
