@@ -1,5 +1,0 @@
-package com.example.tourismAgency.dataAccess.abstracts.agency;
-
-public interface AgenciesRepository {
-
-}
