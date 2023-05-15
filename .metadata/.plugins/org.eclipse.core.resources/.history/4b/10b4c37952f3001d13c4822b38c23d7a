@@ -1,0 +1,5 @@
+package com.tourism.agency.core.utilities;
+
+public class SuccessDataResult {
+
+}

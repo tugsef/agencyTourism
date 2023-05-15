@@ -1,0 +1,9 @@
+package com.example.tourismAgency.dataAccess.abstracts.agency;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.example.tourismAgency.entities.agency.TourismAgency;
+
+public interface AgenciesRepository extends JpaRepository<TourismAgency, Integer> {
+
+}

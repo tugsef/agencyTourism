@@ -1,0 +1,11 @@
+package com.tourism.agency.core.utilities;
+
+public class Result {
+	
+	private boolean success;
+	private String message;
+	
+	public Result(boolean success ) {
+		this.success = success;
+	}
+}
