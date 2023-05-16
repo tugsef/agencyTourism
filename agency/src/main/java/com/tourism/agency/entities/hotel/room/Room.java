@@ -2,6 +2,7 @@ package com.tourism.agency.entities.hotel.room;
 
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.tourism.agency.entities.hotel.Hotel;
 
 import jakarta.persistence.Column;

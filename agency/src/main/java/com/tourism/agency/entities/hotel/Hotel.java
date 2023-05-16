@@ -2,6 +2,7 @@ package com.tourism.agency.entities.hotel;
 
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.tourism.agency.entities.Agency;
 import com.tourism.agency.entities.hotel.room.Room;
 import com.tourism.agency.entities.rezervation.Rezervation;
@@ -25,6 +26,8 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@JsonIgnoreProperties({"hibernateLazyInitializer","handler","rooms","hotal_features" , "rezervations"})
+
 
 public class Hotel {
 	
@@ -54,10 +57,10 @@ public class Hotel {
 	
 	
 	@OneToOne(mappedBy = "hotel")
-    private Location location;
+    private Location locations;
 	
 	@OneToMany(mappedBy = "hotel")
-	private List<HotelFeature> feature;
+	private List<HotelFeature> featuries;
 	
 	@OneToMany(mappedBy = "hotel")
 	private List<Room> rooms;	
