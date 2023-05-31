@@ -7,8 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class RoomsGetAllResponses {
-	
+public class FindAllByPropertyResponse {
 	private int hotelId;
 	private String hotelType;
 	private String hotelName;
@@ -23,10 +22,13 @@ public class RoomsGetAllResponses {
 	private String locationFeature;
 	private String locationLatitude;
 	private String locationLongitude;
-	private  String type;
-	private String decsription;
-	private int capacity;
-	private int squareMeters;
-	private int inventory;
-	private int numberOfBeds;
+	private  String roomType;
+	private String roomDecsription;
+	private int roomCapacity;
+	private int roomSquareMeters;
+	private int roomInventory;
+	private int roomNumberOfBeds;
+	private  String property;
+	private String description;
+	private boolean active;
 }

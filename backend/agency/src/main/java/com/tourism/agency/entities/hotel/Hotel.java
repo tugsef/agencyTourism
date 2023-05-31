@@ -21,56 +21,53 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Table(name="hotels")
+@Table(name = "hotels")
 @Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@JsonIgnoreProperties({"hibernateLazyInitializer"})
+@JsonIgnoreProperties({ "hibernateLazyInitializer" })
 
 public class Hotel {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name="id")
+	@Column(name = "id")
 	private int id;
-	
+
 	@Column(name = "type")
 	private String type;
-	
-	@Column(name="name")
+
+	@Column(name = "name")
 	private String name;
-	
+
 	@Column(name = "decsription")
 	private String decsription;
-	
-	@Column(name="telephone")
+
+	@Column(name = "telephone")
 	private String telephone;
-	
-	@Column(name="rating")
+
+	@Column(name = "rating")
 	private float rating;
-	
-	@Column(name="stars")
+
+	@Column(name = "stars")
 	private int star;
-	
+
 	@ManyToOne
-	@JoinColumn(name= "agency_id" , nullable = false)
+	@JoinColumn(name = "agency_id", nullable = false)
 	@JsonIgnore
 	private Agency agency;
-	
-	
-	@OneToOne(mappedBy = "hotel" )
-    private Location location;
-	
-	@OneToMany(mappedBy = "hotel" )
+
+	@OneToOne(mappedBy = "hotel")
+	private Location location;
+
+	@OneToMany(mappedBy = "hotel")
 	private List<HotelFeature> featuries;
-	
-	@OneToMany(mappedBy = "hotel" )
-	private List<Room> rooms;	
-	
+
+	@OneToMany(mappedBy = "hotel")
+	private List<Room> rooms;
+
 //	@OneToMany(mappedBy = "hotel")
 //	private List<Rezervation> rezervations;
-	
-	
-	
+
 }

@@ -48,6 +48,10 @@ public class Room {
 	@Column(name = "inventory")
 	private int inventory;
 
+	@Column(name = "number_of_beds" )
+	private int  numberOfBeds; 
+	
+	
 	@OneToMany(mappedBy = "room", fetch = FetchType.LAZY)
 	private List<Price> prices;
 

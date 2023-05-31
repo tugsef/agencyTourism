@@ -38,7 +38,7 @@ public class Feature {
 	private boolean active;
 	
 	@ManyToOne
-	@JoinColumn(name = "room_id")
+	@JoinColumn(name = "room_id" , nullable = false)
 	@JsonIgnore
 	private Room room;
 	
