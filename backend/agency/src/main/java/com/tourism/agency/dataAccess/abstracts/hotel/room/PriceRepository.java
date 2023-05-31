@@ -6,4 +6,5 @@ import com.tourism.agency.entities.hotel.room.Price;
 
 public interface PriceRepository extends JpaRepository<Price, Integer>  {
 
+	boolean existsByRoomIdAndType(int roomId ,String type );
 }

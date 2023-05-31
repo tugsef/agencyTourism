@@ -57,11 +57,11 @@ public class FeatureManager implements FeatureService {
 
 	@Override
 	public DataResult<List<FindAllByPropertyResponse>> findByProperty(String property) {
-		List<Feature> features = this.repository.findByPropertyAndActive(property , true);
-		List<FindAllByPropertyResponse> responses = features.stream().map(feature -> 
-									this.mapperService.forResponse().map(feature, FindAllByPropertyResponse.class))
+		List<Feature> features = this.repository.findByPropertyAndActive(property, true);
+		List<FindAllByPropertyResponse> responses = features.stream()
+				.map(feature -> this.mapperService.forResponse().map(feature, FindAllByPropertyResponse.class))
 				.collect(Collectors.toList());
-		return new SuccessDataResult<List<FindAllByPropertyResponse>>(responses , "Listed " + property);
+		return new SuccessDataResult<List<FindAllByPropertyResponse>>(responses, "Listed " + property);
 	}
 
 }
