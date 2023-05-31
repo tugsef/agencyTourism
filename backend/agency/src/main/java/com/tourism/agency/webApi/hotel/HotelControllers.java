@@ -45,3 +45,4 @@ public class HotelControllers {
 		return this.hotelService.createAll(hotel);
 	}
 }
+

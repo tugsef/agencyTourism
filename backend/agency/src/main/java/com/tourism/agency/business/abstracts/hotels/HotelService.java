@@ -15,4 +15,5 @@ public interface HotelService {
 	
 	Result createAll(Hotel hotel);
 	
+	
 }

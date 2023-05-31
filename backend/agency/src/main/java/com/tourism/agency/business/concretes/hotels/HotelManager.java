@@ -46,6 +46,8 @@ public class HotelManager implements HotelService {
 	this.hotelsRepository.save(hotel);
 		return new SuccessResult("Güncellendi");
 	}
+
+
 	
 	
 
