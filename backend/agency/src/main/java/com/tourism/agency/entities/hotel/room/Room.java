@@ -5,6 +5,7 @@ import java.util.List;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.tourism.agency.entities.hotel.Hotel;
+import com.tourism.agency.entities.rezervation.Rezervation;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -25,7 +26,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@JsonIgnoreProperties({"hibernateLazyInitializer"})
+@JsonIgnoreProperties({ "hibernateLazyInitializer" })
 public class Room {
 
 	@Id
@@ -41,30 +42,34 @@ public class Room {
 
 	@Column(name = "capacity")
 	private int capacity;
-	
+
 	@Column(name = "square_meters")
 	private int squareMeters;
 
 	@Column(name = "inventory")
 	private int inventory;
 
-	@Column(name = "number_of_beds" )
-	private int  numberOfBeds; 
-	
+	@Column(name = "number_of_beds")
+	private int numberOfBeds;
+
 	@OneToMany(mappedBy = "room", fetch = FetchType.LAZY)
 	private List<Price> prices;
 
 	@OneToMany(mappedBy = "room", fetch = FetchType.LAZY)
 	private List<Feature> features;
-	
+
 	@OneToMany(mappedBy = "room", fetch = FetchType.LAZY)
 	private List<RoomImages> roomImages;
 
-	@ManyToOne(optional = false, fetch = FetchType.LAZY)
-	@JoinColumn(name = "hotel_id" , nullable = false)
+	@ManyToOne
+	@JoinColumn(name = "hotel_id", nullable = false)
 	@JsonIgnore
 	private Hotel hotel;
 
-	
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "room")
+	private List<Rezervation> rezervations;
+
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "room")
+	private List<DateRoom> dateRooms;
 
 }

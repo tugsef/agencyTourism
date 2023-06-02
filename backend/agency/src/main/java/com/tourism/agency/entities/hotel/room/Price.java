@@ -1,7 +1,7 @@
 package com.tourism.agency.entities.hotel.room;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -20,7 +20,6 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@JsonIgnoreProperties({"hibernateLazyInitializer"})
 public class Price {
 
 	@Id
@@ -47,7 +46,7 @@ public class Price {
 	private int discount;
 
 	@ManyToOne
-	@JoinColumn(name = "room_id" , nullable = false)
+	@JoinColumn(name = "room_id")
 	@JsonIgnore
 	private Room room;
 }

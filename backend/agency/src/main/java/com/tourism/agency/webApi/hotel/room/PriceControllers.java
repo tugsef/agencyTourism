@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
@@ -12,8 +13,10 @@ import org.springframework.web.bind.annotation.RestController;
 import com.tourism.agency.business.abstracts.hotels.rooms.PriceService;
 import com.tourism.agency.business.requests.hotels.rooms.CreatePricesRequests;
 import com.tourism.agency.business.responses.hotels.rooms.GetAllResponsePrice;
+import com.tourism.agency.business.responses.hotels.rooms.GetByQ1Responses;
 import com.tourism.agency.core.utilities.result.DataResult;
 import com.tourism.agency.core.utilities.result.Result;
+import com.tourism.agency.entities.hotel.room.Price;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -36,4 +39,8 @@ public class PriceControllers {
 	public DataResult<List<GetAllResponsePrice>> getAll(){
 		return this.service.getAll();
 	}
+	
+	@GetMapping("/{q1}")
+	public DataResult<List<GetByQ1Responses>> getAllByPriceQ1(@PathVariable double q1){
+		return this.service.getAllByPriceQ1(q1);}
 }

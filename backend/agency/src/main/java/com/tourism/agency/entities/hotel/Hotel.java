@@ -67,7 +67,6 @@ public class Hotel {
 	@OneToMany(mappedBy = "hotel")
 	private List<Room> rooms;
 
-//	@OneToMany(mappedBy = "hotel")
-//	private List<Rezervation> rezervations;
+	
 
 }

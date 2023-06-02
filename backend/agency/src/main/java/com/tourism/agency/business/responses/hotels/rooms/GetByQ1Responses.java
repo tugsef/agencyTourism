@@ -1,10 +1,5 @@
 package com.tourism.agency.business.responses.hotels.rooms;
 
-import java.util.List;
-
-import com.tourism.agency.entities.hotel.HotelFeature;
-import com.tourism.agency.entities.hotel.room.RoomImages;
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -12,22 +7,13 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class GetAllResponsePrice {
+public class GetByQ1Responses {
 
-	private int id;
 	private String type;
 	private double q1;
 	private double q2;
 	private double q3;
 	private double q4;
-	private int discount;
-	private List<HotelFeature> features;
-	private String roomType;
-	private String roomDescription;
-	private int roomCapacity;
-	private int roomSquareMeters;
-	private int roomInventory;
-	private int roomnumberOfBeds;
 	private int hotelId;
 	private String hotelType;
 	private String hotelName;
@@ -42,7 +28,10 @@ public class GetAllResponsePrice {
 	private String locationFeature;
 	private String locationLatitude;
 	private String locationLongitude;
-	private List<RoomImages> roomRoomImages;
-	
-	
+	private  String roomType;
+	private String roomDecsription;
+	private int roomCapacity;
+	private int roomSquareMeters;
+	private int roomInventory;
+	private int roomNumberOfBeds;
 }

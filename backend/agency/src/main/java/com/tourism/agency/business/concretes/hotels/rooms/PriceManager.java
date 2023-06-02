@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import com.tourism.agency.business.abstracts.hotels.rooms.PriceService;
 import com.tourism.agency.business.requests.hotels.rooms.CreatePricesRequests;
 import com.tourism.agency.business.responses.hotels.rooms.GetAllResponsePrice;
+import com.tourism.agency.business.responses.hotels.rooms.GetByQ1Responses;
 import com.tourism.agency.business.rules.hotels.rooms.PriceBussinessRules;
 import com.tourism.agency.core.utilities.mapper.ModelMapperService;
 import com.tourism.agency.core.utilities.result.DataResult;
@@ -23,8 +24,8 @@ import lombok.Data;
 @Data
 @AllArgsConstructor
 @Service
-public class PriceManager implements PriceService{
-	
+public class PriceManager implements PriceService {
+
 	private PriceRepository repository;
 	private ModelMapperService mapperService;
 	private PriceBussinessRules rules;
@@ -35,20 +36,27 @@ public class PriceManager implements PriceService{
 		Price price = this.mapperService.forRequest().map(pricesRequests, Price.class);
 		price.setId(-1);
 		this.repository.save(price);
-		
+
 		return new SuccessResult("Data added");
 	}
 
 	@Override
 	public DataResult<List<GetAllResponsePrice>> getAll() {
 		List<Price> prices = this.repository.findAll();
-		List<GetAllResponsePrice> getAllResponsePrices = prices.stream().map(price -> 
-																		this.mapperService
-																		.forResponse()
-																		.map(price, GetAllResponsePrice.class))
+		List<GetAllResponsePrice> getAllResponsePrices = prices.stream()
+				.map(price -> this.mapperService.forResponse().map(price, GetAllResponsePrice.class))
 				.collect(Collectors.toList());
-		return new SuccessDataResult<List<GetAllResponsePrice>>(getAllResponsePrices , "Data listed");
+		return new SuccessDataResult<List<GetAllResponsePrice>>(getAllResponsePrices, "Data listed");
 	}
+
+	@Override
+	public DataResult<List<GetByQ1Responses>> getAllByPriceQ1(double q1) {
+		List<Price> prices = this.repository.findByQ1(q1);
+		List<GetByQ1Responses> responses = prices.stream()
+				.map(p -> this.mapperService.forResponse().map(p, GetByQ1Responses.class))
+				.collect(Collectors.toList());
+		return new SuccessDataResult<List<GetByQ1Responses>>(responses, "Data Listed Price q1");
 	}
+}
 
 

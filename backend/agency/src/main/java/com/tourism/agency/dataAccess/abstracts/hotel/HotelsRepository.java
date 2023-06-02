@@ -7,4 +7,5 @@ import com.tourism.agency.entities.hotel.Hotel;
 public interface HotelsRepository extends JpaRepository<Hotel, Integer> {
 	
 	boolean existsByName(String name);
+	
 }

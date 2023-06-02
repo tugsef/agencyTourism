@@ -21,8 +21,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Data
-@Service
 @AllArgsConstructor
+@Service
 public class LocationManager implements LocationService{
 	
 	private ModelMapperService mapperService;
