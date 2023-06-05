@@ -1,14 +1,10 @@
 package com.tourism.agency.core.utilities.cloudinary;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import org.springframework.stereotype.Service;
 
 import com.cloudinary.Cloudinary;
 
 import lombok.AllArgsConstructor;
-import lombok.Data;
 
 @Service
 @AllArgsConstructor

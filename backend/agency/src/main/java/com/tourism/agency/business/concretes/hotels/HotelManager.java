@@ -19,7 +19,6 @@ import com.tourism.agency.core.utilities.result.SuccessDataResult;
 import com.tourism.agency.core.utilities.result.SuccessResult;
 import com.tourism.agency.dataAccess.abstracts.hotel.HotelsRepository;
 import com.tourism.agency.entities.hotel.Hotel;
-import com.tourism.agency.entities.hotel.room.Price;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

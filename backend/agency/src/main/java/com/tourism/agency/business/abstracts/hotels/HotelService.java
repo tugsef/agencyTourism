@@ -8,8 +8,6 @@ import com.tourism.agency.core.utilities.result.DataResult;
 import com.tourism.agency.core.utilities.result.Result;
 import com.tourism.agency.entities.hotel.Hotel;
 
-import lombok.Data;
-
 public interface HotelService {
 
 	DataResult<List<Hotel>> getAll();

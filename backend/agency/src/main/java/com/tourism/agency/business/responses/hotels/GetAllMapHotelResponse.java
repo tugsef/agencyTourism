@@ -2,7 +2,6 @@ package com.tourism.agency.business.responses.hotels;
 
 import java.util.List;
 
-import com.tourism.agency.entities.hotel.room.Price;
 import com.tourism.agency.entities.hotel.room.Room;
 
 import lombok.AllArgsConstructor;
