@@ -1,9 +1,7 @@
 package com.tourism.agency.webApi.hotel;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
-import org.springframework.data.domain.Sort;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,7 +17,6 @@ import com.tourism.agency.business.requests.hotels.HotelCreateRequests;
 import com.tourism.agency.business.responses.hotels.GetAllMapHotelResponse;
 import com.tourism.agency.core.utilities.result.DataResult;
 import com.tourism.agency.core.utilities.result.Result;
-import com.tourism.agency.core.utilities.result.SuccessDataResult;
 import com.tourism.agency.entities.hotel.Hotel;
 
 import jakarta.validation.Valid;
@@ -29,6 +26,7 @@ import lombok.AllArgsConstructor;
 @RestController
 @RequestMapping("/api/hotels")
 @CrossOrigin
+
 public class HotelControllers {
 
 	private HotelService hotelService;
