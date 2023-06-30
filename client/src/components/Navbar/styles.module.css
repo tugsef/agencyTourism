@@ -1,0 +1,19 @@
+.container{
+    margin: 1em;
+    max-height: 7%;
+}
+
+.div{
+    width: 100%;
+    display: flex;
+}
+
+.button{
+    margin: 1em;
+}
+
+.nav{
+    color: black;
+}
+
+

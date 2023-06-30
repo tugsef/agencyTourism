@@ -75,6 +75,8 @@ public class WebSecurityConfig {
         .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
         .authorizeHttpRequests(auth -> 
           auth
+          .requestMatchers("/api/auth/**").permitAll()
+          .requestMatchers("/api/test/**").permitAll()
           .requestMatchers(HttpMethod.GET , "api/rooms/**").permitAll()
           .requestMatchers(HttpMethod.GET , "api/hotels/**").permitAll()
           .requestMatchers(HttpMethod.GET , "api/location/**").permitAll()
@@ -83,8 +85,7 @@ public class WebSecurityConfig {
           .requestMatchers(HttpMethod.POST , "api/rooms/search/**").permitAll()
           .requestMatchers(HttpMethod.POST , "api/rooms/prices/filter").permitAll()     
           .requestMatchers(HttpMethod.POST , "api/dashboard").permitAll()
-          .requestMatchers("/api/auth/**").permitAll()
-              .requestMatchers("/api/test/**").permitAll()
+         
               .anyRequest().authenticated()
         )
         .logout()

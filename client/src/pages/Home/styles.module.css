@@ -1,0 +1,25 @@
+.container{
+    height: 75vh;
+    margin-top:6em;
+    background-image: url("https://res.cloudinary.com/dvfdwlbuy/image/upload/v1686427066/148915-natural_environment-sky-road_trip-los_angeles-desserts-1366x768_e4llan.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeats
+}
+ 
+.hc{
+    margin-top:5em ;
+    text-decoration: underline;
+}
+ 
+.cm{
+    margin: 2em;
+}
+
+.date-toggle { 
+
+    display: none; 
+    
+    }
+    
+    

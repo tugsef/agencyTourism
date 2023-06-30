@@ -1,0 +1,12 @@
+.container {
+  background-color: #f6f1f1;
+  padding: 6px;
+  border-radius: 6px;
+}
+
+.container2 {
+  margin-top: 6px;
+  border: 1px solid #f1f6f9;
+  padding: 8px 6px 6px 6px;
+  border-radius: 10px;
+}
