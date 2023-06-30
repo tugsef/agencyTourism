@@ -32,19 +32,31 @@ public class HotelFeatureManager implements HotelFeatureService{
 	@Override
 	public Result create(HotelFeatureCreateRequest createRequest) {
 		this.rules.existsByPropertyAndHotelId(createRequest.getProperty(), createRequest.getHotelId());
-		HotelFeature feature =this.mapperService.forRequest().map(createRequest , HotelFeature.class);	
+		
+		HotelFeature feature =this
+				.mapperService
+				.forRequest()
+				.map(createRequest , HotelFeature.class);	
+		
 		feature.setId(-1);
+		
 		this.repository.save(feature) ;
 		return new SuccessResult("Özellik Kayıt Edildi.");
 	}
 
 	@Override
 	public DataResult<List<HotelFeaturesByPropertyAndActiveResposes>> findAllPropertyAndActive(String property) {
-		List<HotelFeature> features = this.repository. getByPropertyAndActive(property, true);
+		
+		List<HotelFeature> features = this
+				.repository
+				.getByPropertyAndActive(property, true);
+		
 		List<HotelFeaturesByPropertyAndActiveResposes> resposes = features.stream()
-				.map(feature -> this.mapperService.forResponse()
+				.map(feature -> this
+						.mapperService.forResponse()
 						.map(feature, HotelFeaturesByPropertyAndActiveResposes.class))
 				.collect(Collectors.toList());
+		
 		return new SuccessDataResult<List<HotelFeaturesByPropertyAndActiveResposes>>(resposes , "Data Listelendi");
 	}
 

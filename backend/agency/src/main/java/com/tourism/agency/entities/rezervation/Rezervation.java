@@ -2,8 +2,6 @@ package com.tourism.agency.entities.rezervation;
 
 import java.util.List;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.tourism.agency.entities.customer.Customer;
 import com.tourism.agency.entities.hotel.Hotel;
 import com.tourism.agency.entities.hotel.room.Room;
@@ -29,7 +27,6 @@ import lombok.NoArgsConstructor;
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
-@JsonIgnoreProperties({ "hibernateLazyInitializer" })
 public class Rezervation {
 
 	@Id
@@ -57,7 +54,6 @@ public class Rezervation {
 	
 	@ManyToOne(fetch = FetchType.LAZY )
 	@JoinColumn(name = "hotel_id" )
-	@JsonIgnore
 	private Hotel hotel;
 
 	@OneToMany(mappedBy = "rezervation" , cascade = CascadeType.ALL)

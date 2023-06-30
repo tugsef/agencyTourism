@@ -19,4 +19,6 @@ public class HotelBussinessRules {
 		if (this.repository.existsByName(name))
 			throw new BusinessExeption("Hotel name already exists");
 	}
+	
+	
 }

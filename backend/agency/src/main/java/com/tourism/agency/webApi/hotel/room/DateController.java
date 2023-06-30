@@ -24,7 +24,7 @@ public class DateController {
 	@PostMapping
 	@ResponseStatus(code = HttpStatus.CREATED)
 	public Result create(@RequestBody CreateDateRequest createDateRequest) {
-		System.out.println(createDateRequest.getCheckInDate());
+		
 		return this.service.createDate(createDateRequest);
 	}
 

@@ -33,10 +33,10 @@ public class FeatureManager implements FeatureService {
 	@Override
 	public Result create(CreateFeaturesRequest featuresRequest) {
 		this.rules.checkIfRoomIdAndPropertyExists(featuresRequest.getRoomId(), featuresRequest.getProperty());
-		Feature feature = this.mapperService.forRequest().map(featuresRequest , Feature.class);
+		Feature feature = this.mapperService.forRequest().map(featuresRequest, Feature.class);
 		feature.setId(-1);
 		this.repository.save(feature);
-		
+
 		return new SuccessResult("Data added");
 	}
 

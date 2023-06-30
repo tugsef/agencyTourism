@@ -23,7 +23,6 @@ public class HotelFeatureCreateRequest {
 	@NotNull
 	private int hotelId;
 
-	@NotNull
-	private int numberOfBeds;
+	
 
 }

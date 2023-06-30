@@ -1,5 +1,9 @@
 package com.tourism.agency.business.responses.hotels;
 
+import java.util.List;
+
+import com.tourism.agency.entities.hotel.room.Room;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -24,6 +28,7 @@ public class LocationGetByCityResponses {
 	private String feature;
 	private String latitude;
 	private String longitude;
+	private List<Room> rooms;
 
 	
 }

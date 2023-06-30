@@ -19,14 +19,20 @@ public class HotelCreateRequests {
 	private String name;
 
 	@NotNull
-	private int rating;
+	private float rating;
 
 	private String telephone;
 
 	@NotNull
 	private String type;
+	
+	@NotNull
+	private int star;
 
 	@NotNull
 	private int agencyId;
+	
+	
+	
 	
 }

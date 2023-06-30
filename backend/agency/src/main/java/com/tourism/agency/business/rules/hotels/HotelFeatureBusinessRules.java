@@ -16,6 +16,7 @@ public class HotelFeatureBusinessRules {
 	private HotelFeaturesRepository repository;
 	
 	public void existsByPropertyAndHotelId(String property, int hotelId) {
+		
 		if (this.repository.existsByPropertyAndHotelId(property, hotelId))
 			throw new BusinessExeption("Hotel feature already exists");
 	}

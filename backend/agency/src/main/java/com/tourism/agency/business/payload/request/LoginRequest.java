@@ -8,7 +8,7 @@ import lombok.Data;
 @Data
 @AllArgsConstructor
 public class LoginRequest {
-	@NotBlank
+	  @NotBlank
 	  private String username;
 
 	  @NotBlank

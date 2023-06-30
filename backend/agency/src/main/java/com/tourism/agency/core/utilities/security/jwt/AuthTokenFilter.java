@@ -37,13 +37,21 @@ public class AuthTokenFilter extends OncePerRequestFilter {
 			
 			String jwt = parseJwt(request);
 			if(jwt !=null && jwtUtils.validateJwtToken(jwt)) {
+				//Jwst parse etti 
 				String username = jwtUtils.getUserNameFromJwtToken(jwt);
 				
+				//userdetails üzerinden detail in database de var olup olmadığına baktı
+				//Kullanıcı adına göre kullanıcıyı bulur. UserDetailsServiceImpl implement ettik burdan bakacak
 				UserDetails userDetails = userDetailsService.loadUserByUsername(username);
+				
+				 //userdetais parametresi alarak verilen kullanıcı bilgilerini oluşturucak
+		        //kullnaıcınyetkilerini bu nesneye verecek 
 				UsernamePasswordAuthenticationToken authentication = new UsernamePasswordAuthenticationToken(userDetails , null ,
 						userDetails.getAuthorities());
+				// en güncel tokene verecek değişim sağlayacak
 				authentication.setDetails(new WebAuthenticationDetailsSource().buildDetails(request));
 				
+				//En güncel halini veriyorum
 				SecurityContextHolder.getContext().setAuthentication(authentication);
 			}
 			

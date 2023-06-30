@@ -40,7 +40,7 @@ public class Hotel {
 
 	@Column(name = "name")
 	private String name;
-
+	
 	@Column(name = "decsription")
 	private String decsription;
 

@@ -45,8 +45,13 @@ public class LocationManager implements LocationService{
 	public DataResult<List<LocationGetByCityResponses>> findByCity(String city) {
 		List<Location> locations = this.repository.findByCity(city);
 
-	List<LocationGetByCityResponses> cityResponses = locations.stream().map(location -> this.mapperService
-				.forResponse().map(location, LocationGetByCityResponses.class)).collect(Collectors.toList());
+	List<LocationGetByCityResponses> cityResponses = 
+			locations
+			.stream()
+			.map(location -> this.mapperService
+				.forResponse()
+				.map(location, LocationGetByCityResponses.class))
+			.collect(Collectors.toList());
 	return new SuccessDataResult<List<LocationGetByCityResponses>>(cityResponses , "Data Listed");
 	}
 

@@ -15,5 +15,6 @@ public class RoomCreateRequests {
 	private int capacity;
 	private int squareMeters;
 	private int inventory;
+	private int numberOfBeds;
 
 }

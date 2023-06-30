@@ -27,7 +27,7 @@ import lombok.Data;
 @Data
 @AllArgsConstructor
 @RestController
-@RequestMapping("/rooms/features")
+@RequestMapping("api/rooms/features")
 public class FeatureControllers {
 
 	private FeatureService service;

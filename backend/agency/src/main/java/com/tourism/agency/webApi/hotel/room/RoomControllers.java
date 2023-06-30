@@ -3,6 +3,7 @@ package com.tourism.agency.webApi.hotel.room;
 import java.util.List;
 
 import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -15,7 +16,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.tourism.agency.business.abstracts.hotels.rooms.RoomService;
 import com.tourism.agency.business.requests.hotels.rooms.RoomCreateRequests;
+import com.tourism.agency.business.requests.hotels.rooms.RoomRezervationSearchRequest;
 import com.tourism.agency.business.requests.hotels.rooms.RoomUpdateRequests;
+import com.tourism.agency.business.responses.hotels.rooms.GetHotelIdRoomDateResponse;
 import com.tourism.agency.business.responses.hotels.rooms.RoomsGetAllResponses;
 import com.tourism.agency.core.utilities.result.DataResult;
 import com.tourism.agency.core.utilities.result.Result;
@@ -27,6 +30,7 @@ import lombok.Data;
 @RequestMapping("/api/rooms")
 @Data
 @AllArgsConstructor
+@CrossOrigin(origins = "*", maxAge = 3600)
 public class RoomControllers {
 
 	private RoomService service;
@@ -53,5 +57,12 @@ public class RoomControllers {
 	public Result deleteByıd(@PathVariable int id) {
 		return this.service.deleteById(id);
 	}
+	
+	@PostMapping("/search/{id}")
+	public DataResult<List<GetHotelIdRoomDateResponse>> findByHotelIdRoomDate
+	(@RequestBody RoomRezervationSearchRequest request,@PathVariable int id){
+		return this.service.findByHotelIdRoomDate(request, id);
+	}
+	
 	
 }

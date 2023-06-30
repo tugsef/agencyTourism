@@ -6,4 +6,6 @@ import com.tourism.agency.entities.hotel.room.RoomImages;
 
 public interface RoomImagesRepository extends JpaRepository<RoomImages, Integer> {
 
+	
+   
 }

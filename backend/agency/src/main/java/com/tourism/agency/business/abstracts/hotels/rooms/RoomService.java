@@ -1,9 +1,12 @@
 package com.tourism.agency.business.abstracts.hotels.rooms;
 
+import java.util.Date;
 import java.util.List;
 
 import com.tourism.agency.business.requests.hotels.rooms.RoomCreateRequests;
+import com.tourism.agency.business.requests.hotels.rooms.RoomRezervationSearchRequest;
 import com.tourism.agency.business.requests.hotels.rooms.RoomUpdateRequests;
+import com.tourism.agency.business.responses.hotels.rooms.GetHotelIdRoomDateResponse;
 import com.tourism.agency.business.responses.hotels.rooms.RoomsGetAllResponses;
 import com.tourism.agency.core.utilities.result.DataResult;
 import com.tourism.agency.core.utilities.result.Result;
@@ -17,4 +20,6 @@ public interface RoomService {
 	Result update(RoomUpdateRequests updateRequests);
 	
 	Result deleteById(int id);
+	
+	DataResult<List<GetHotelIdRoomDateResponse>> findByHotelIdRoomDate(RoomRezervationSearchRequest request , int hotelId);
 }
