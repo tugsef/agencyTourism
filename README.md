@@ -19,6 +19,10 @@ This repodisitory includes tourism agency management and customer reservation ap
 
 
 
-https://github.com/tugsef/agencyTourism/assets/39422788/96493bc1-14fd-4455-b419-773aa40e1754
+https://github.com/tugsef/agencyTourism/assets/39422788/a4ea2717-adb4-48dd-9302-67b008df346f
+
+
+
+
 
 
