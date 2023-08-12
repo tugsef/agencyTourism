@@ -89,7 +89,7 @@ In addition, for businesses that want to register their facility to the system, 
 
 # Introduction
 
- [![Watch the video](https://img.youtube.com/vi/nTQUwghvy5Q/default.jpg)](https://youtube.com/@sefad.4331)
+ [![Watch the video](https://youtu.be/WcbzJHf1OP0/default.jpg)](https://youtu.be/WcbzJHf1OP0)
 
 
 
