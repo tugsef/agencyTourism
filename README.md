@@ -1,11 +1,7 @@
 # agencyTourism
 This repodisitory includes tourism agency management and customer reservation application
 
-![java-svgrepo-com (1)](https://github.com/tugsef/react-e-Commerce/assets/39422788/a2450781-ead3-49a8-990f-8efc2f2ce6c4)
-![springio-icon](https://github.com/tugsef/react-e-Commerce/assets/39422788/401a7dc8-ade4-4775-a0de-f107a1ca9276)
-![spring-security-project (1)](https://github.com/tugsef/agencyTourism/assets/39422788/dcec0fee-3288-45b1-b197-4d391d79a6da)
-![react-javascript-js-framework-facebook-svgrepo-com](https://github.com/tugsef/react-e-Commerce/assets/39422788/98f543bd-8985-4957-ae1e-4775f95859cd)
-![postgresql-icon](https://github.com/tugsef/react-e-Commerce/assets/39422788/7fe62082-ab25-4cac-b2e0-94a03c133c5e)
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white) ![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white) ![Swagger](https://img.shields.io/badge/-Swagger-%23Clojure?style=for-the-badge&logo=swagger&logoColor=white) ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white) ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white) ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
 I wanted to develop an application where I could use my valuable connections with Java Spring Boot on the back-end and React on the front-end.
 
