@@ -91,5 +91,12 @@ In addition, for businesses that want to register their facility to the system, 
 
  [![Watch the video](https://img.youtube.com/vi/WcbzJHf1OP0/default.jpg)](https://youtu.be/WcbzJHf1OP0)
 
+# :e-mail: Contact
+|***Sefa Demirtaş***|
+|:-------------|
+|*Software Developer*|
+|[Linkedin](https://www.linkedin.com/in/sefa-demirta%C5%9F-86b473230/)|
+|[Patika.dev](https://app.patika.dev/sefad)|
+|sefa.demirtas91@gmail.com|
 
 
