@@ -1,6 +1,4 @@
-o# agencyTourism
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=⌛+ Pending..." alt="Typing SVG" /></a>
-
+# agencyTourism
 This repodisitory includes tourism agency management and customer reservation application
 
 ![java-svgrepo-com (1)](https://github.com/tugsef/react-e-Commerce/assets/39422788/a2450781-ead3-49a8-990f-8efc2f2ce6c4)
