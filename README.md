@@ -4,10 +4,25 @@
 ![react-javascript-js-framework-facebook-svgrepo-com](https://github.com/tugsef/react-e-Commerce/assets/39422788/98f543bd-8985-4957-ae1e-4775f95859cd)
 ![postgresql-icon](https://github.com/tugsef/react-e-Commerce/assets/39422788/7fe62082-ab25-4cac-b2e0-94a03c133c5e)
 
-I wanted to develop an application where I can use my Java Spring Boot on the back-end and my React knowledge on the front-end.
-In this application, which I designed as a Tourism Agency System,
+I wanted to develop an application where I could use my valuable connections with Java Spring Boot on the back-end and React on the front-end.
 
-- 'Maven Project'
+
+- Maven project
+- [Spring Security](https://spring.io/projects/spring-security)
+    - Authentication
+    - Authorization
+    - Password Encoder
+- Seeing the hotels registered in the system
+- Ability to search for hotels by city, date and number of people
+- Ability to search by city
+- Filter by price, star, hotel type or room, etc.
+- View hotel details
+- Searching for available rooms in the hotel
+
+In addition, for businesses that want to register their facility to the system, hotel addition, deletion, photo, room and reservation transactions etc. on the back-end side. Tested manually using Swagger and Postman. It is not added to the front-end part. You can check it out on my Github profile.
+
+
+
 
 
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=⌛+ Pending..." alt="Typing SVG" /></a>
