@@ -4,6 +4,10 @@
 ![react-javascript-js-framework-facebook-svgrepo-com](https://github.com/tugsef/react-e-Commerce/assets/39422788/98f543bd-8985-4957-ae1e-4775f95859cd)
 ![postgresql-icon](https://github.com/tugsef/react-e-Commerce/assets/39422788/7fe62082-ab25-4cac-b2e0-94a03c133c5e)
 
+I wanted to develop an application where I can use my Java Spring Boot on the back-end and my React knowledge on the front-end.
+In this application, which I designed as a Tourism Agency System,
+
+- 'Maven Project'
 
 
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=⌛+ Pending..." alt="Typing SVG" /></a>
