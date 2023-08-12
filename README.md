@@ -1,3 +1,7 @@
+# agencyTourism
+
+This repodisitory includes tourism agency management and customer reservation application
+
 ![java-svgrepo-com (1)](https://github.com/tugsef/react-e-Commerce/assets/39422788/a2450781-ead3-49a8-990f-8efc2f2ce6c4)
 ![springio-icon](https://github.com/tugsef/react-e-Commerce/assets/39422788/401a7dc8-ade4-4775-a0de-f107a1ca9276)
 ![spring-security-project (1)](https://github.com/tugsef/agencyTourism/assets/39422788/dcec0fee-3288-45b1-b197-4d391d79a6da)
@@ -29,7 +33,7 @@ In addition, for businesses that want to register their facility to the system, 
     <li>stream api</li>
     <li>Java spring boot faremework</li>
     <li>spring boot data JPA(hibernate) </li>
-    <li>Model mapper /li>
+    <li>Model mapper</li>
     <li>Lombok</li>
     <li>Json web token</li>
   </ul> 
@@ -63,9 +67,23 @@ In addition, for businesses that want to register their facility to the system, 
 
 
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=⌛+ Pending..." alt="Typing SVG" /></a>
-# agencyTourism
 
-This repodisitory includes tourism agency management and customer reservation application
+<details><summary><b>Database</b></summary>
+<p>
+  <ul>
+    <li>Postgresql</li>
+  </ul> 
+</p>
+</details>
+
+<details><summary><b>Testing tools</b></summary>
+<p>
+  <ul>
+    <li>Swagger</li>
+     <li>Postman</li>
+  </ul> 
+</p>
+</details>
 
 # Spring Security6.1.0
 
