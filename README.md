@@ -48,7 +48,7 @@ In addition, for businesses that want to register their facility to the system, 
   </ul> 
 </p>
 </details>
-<details><summary><b>Design Approaches</b></summary>
+<details><summary><b>Frond-End</b></summary>
 <p>
   <ul>
     <li>React</li>
