@@ -90,16 +90,17 @@ In addition, for businesses that want to register their facility to the system, 
 
 ![postmanSigninSecurity](https://github.com/tugsef/agencyTourism/assets/39422788/34ec7c25-4bb9-4da0-b314-b329d57a813b)
 
-# Introduction
-
- [![Watch the video](https://img.youtube.com/vi/WcbzJHf1OP0/default.jpg)](https://youtu.be/WcbzJHf1OP0)
+# Introduction(Watch Youtube)
+  <a href="https://youtu.be/WcbzJHf1OP0">
+      <img src="https://github.com/tugsef/agencyTourism/blob/main/ekrran%20al%C4%B1nt%C4%B1s%C4%B1.PNG"/>
+  </a>
+ 
 
 # :e-mail: Contact
 |***Sefa Demirtaş***|
 |:-------------|
 |*Software Developer*|
-|[Linkedin](https://www.linkedin.com/in/sefa-demirta%C5%9F-86b473230/)|
-|[Patika.dev](https://app.patika.dev/sefad)|
+|[Linkedin](https://www.linkedin.com/in/sefa-demirtas)|
 |sefa.demirtas91@gmail.com|
 
 
